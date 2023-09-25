@@ -1,6 +1,5 @@
 # `ros2_cpp_template` package
-ROS 2 C++ template, to get started, use template by clicking on the Green button labeled [`Use this template`][use] / [`Create new repository`][use]. 
-
+ROS 2 C++ package.
 ## Packages and build
 
 It is assumed that the workspace is `~/ros2_ws/`.
@@ -28,6 +27,11 @@ ros2 launch ros2_cpp_template launch_example1.launch.py
 ```
 
 # Delete this part if you are using it as a template
+
+ROS 2 pacage template, to get started, use template by clicking on the Green button labeled [`Use this template`](https://github.com/sze-info/ros2_cpp_template/generate) / [`Create new repository`](https://github.com/sze-info/ros2_cpp_template/generate). 
+
+![](img/use_this_template01.png)
+
 
 Let's assume 
 - your Github username is `mycoolusername`
