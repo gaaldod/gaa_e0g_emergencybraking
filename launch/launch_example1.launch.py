@@ -23,5 +23,10 @@ def generate_launch_description():
                 ('/input/pose', '/turtlesim1/turtle1/pose'),
                 ('/output/cmd_vel', '/turtlesim2/turtle1/cmd_vel'),
             ]
-        )
+        ),
+        # Node(
+        #     package='ros2_cpp_template',
+        #     executable='simple_sub_node',
+        #     output='screen',
+        # ),
     ])
