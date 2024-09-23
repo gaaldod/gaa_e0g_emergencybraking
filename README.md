@@ -1,13 +1,13 @@
 # `gaa_e0g_emergencybraking` package
 ROS 2 C++ package.  [![Static Badge](https://img.shields.io/badge/ROS_2-Humble-34aec5)](https://docs.ros.org/en/humble/)
 
-A package két node-ból áll. A '/sensor_node' random jelet generál az akadályészlelésre, amit az 'obstacle' topic-ban ad át. A '/controller_node' ezt az adatot figyeli, és riasztást küld, amikor akadályt észlel.
+A package két node-ból áll. A `/sensor_node` random jelet generál az akadályészlelésre, amit az `obstacle` topic-ban ad át. A `/controller_node` ezt az adatot figyeli, és riasztást küld, amikor akadályt észlel.
 
 ```mermaid
 graph TD;
-    A[Sensor Node] -->|Publishes to 'obstacle' topic (std_msgs/msg/Bool)| B[Controller Node];
+    A[Sensor Node] -->|Publishes to 'obstacle' topic std_msgs/msg/Bool| B[Controller Node];
     B -->|Subscribes to 'obstacle' topic| A;
-'''
+```
 
 ## Packages and build
 
