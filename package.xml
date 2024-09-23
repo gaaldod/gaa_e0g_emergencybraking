@@ -2,10 +2,13 @@
 <package format="2">
   <name>emergency_braking_system</name>
   <version>0.0.0</version>
-  <description>Emergency Braking System</description>
-  <maintainer email="user@example.com">User</maintainer>
+  <description>Emergency Braking System tool for ajr</description>
+  <maintainer email="gaal.dominik@hallgato.sze.hu">User</maintainer>
   <license>Apache-2.0</license>
   <buildtool_depend>ament_cmake</buildtool_depend>
   <depend>rclcpp</depend>
   <depend>std_msgs</depend>
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
 </package>
