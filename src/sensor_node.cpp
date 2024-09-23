@@ -16,7 +16,7 @@ private:
   void publish_obstacle()
   {
     auto message = std_msgs::msg::Bool();
-    message.data = true;  // Simulate obstacle detection
+    message.data = std::rand() % 2;   // Simulate obstacle detection; Randomly set to true or false
     RCLCPP_INFO(this->get_logger(), "Publishing: '%s'", message.data ? "true" : "false");
     publisher_->publish(message);
   }
