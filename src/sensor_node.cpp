@@ -15,8 +15,15 @@ public:
 private:
   void publish_obstacle()
   {
+    static float distance = 30.0;
     auto message = std_msgs::msg::Bool();
-    message.data = std::rand() % 2;   // Simulate obstacle detection; Randomly set to true or false
+    float decrement = static_cast<float>(std::rand() % 3) + 0.5; // Random decrement between 0.5 and 2.5
+    if (distance > decrement) {
+      distance -= decrement;
+    } else {
+      distance = 0;
+    }
+    message.data = (distance > 10); //if distance is greater than 10, then there is no obstacle
     RCLCPP_INFO(this->get_logger(), "Publishing: '%s'", message.data ? "true" : "false");
     publisher_->publish(message);
   }

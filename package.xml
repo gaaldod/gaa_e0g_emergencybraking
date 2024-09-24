@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>emergency_braking_system</name>
+  <name>gaa_e0g_emergencybraking</name>
   <version>0.0.0</version>
   <description>Emergency Braking System tool for ajr</description>
   <maintainer email="gaal.dominik@hallgato.sze.hu">User</maintainer>

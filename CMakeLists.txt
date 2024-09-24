@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5)
-project(emergency_braking_system)
+project(gaa_e0g_emergencybraking)
 
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
